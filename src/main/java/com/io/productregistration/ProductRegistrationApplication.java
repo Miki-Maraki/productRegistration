@@ -1,7 +1,9 @@
+
 package com.io.productregistration;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 
 @SpringBootApplication
 public class ProductRegistrationApplication {
@@ -11,3 +13,7 @@ public class ProductRegistrationApplication {
 	}
 
 }
+
+
+
+

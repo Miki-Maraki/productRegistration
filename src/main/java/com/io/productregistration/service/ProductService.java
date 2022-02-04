@@ -1,5 +1,7 @@
 package com.io.productregistration.service;
 
+import java.util.Optional;
+
 import com.io.productregistration.model.Product;
 
 
@@ -9,9 +11,14 @@ public interface ProductService {
 	
 	public Iterable<Product> getAllProduct();
 	
-	public Product getProductById(long id);
-	
 	public Iterable<Product> addProduct(Product product);
 	
-	public Product deleteProductById(long id);
+	public Product getProductById(long id);
+	
+	public Optional<Product> deleteProductById(long id);
 }
+
+
+
+
+
