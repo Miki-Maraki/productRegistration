@@ -13,7 +13,7 @@ import com.io.productregistration.service.ProductService;
 
 
 @Service      //means class is business layer
-@Transactional
+@Transactional // is the spring declarative transaction management 2
 public class ProductServiceImpl implements ProductService {
 	
 	@Autowired
@@ -34,12 +34,11 @@ public class ProductServiceImpl implements ProductService {
 
 	@Override
 	public Product getProductById(long id) {
-		
 		Optional<Product> product = productRepository.findById(id);
-		System.out.println("product : " + product.get());
+		//System.out.println("product : " + product.get());
 		
 		if(product.isPresent()) {
-			Product p=product.get();
+			Product p = product.get();
 			return p;
 		}
 		return product.orElse(null);

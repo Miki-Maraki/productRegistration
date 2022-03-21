@@ -47,7 +47,7 @@ public class ProductController {
 		return ptid;	// return product by id 
 	}
 	
-	@DeleteMapping("/delete/{id}")      // perfect
+	@DeleteMapping("/delete/{id}")      
 	public Optional<Product> deleteProductById(@PathVariable long id) {
 		
 		return productService.deleteProductById(id);
